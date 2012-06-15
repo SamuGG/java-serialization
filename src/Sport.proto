@@ -1,0 +1,10 @@
+package example.com;
+
+option java_package = "example.com";
+option java_outer_classname = "Sport_p";
+option optimize_for = SPEED;
+
+message sport {
+	required int32 id = 1;
+	required string name = 2;
+}
