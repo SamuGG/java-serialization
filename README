@@ -1,0 +1,12 @@
+This simple java project shows 3 different methods of serialize/deserialize an arbitrary object.
+This 3 methods are:
+- Java native serialization
+- Java externalizable interface implementation
+- Google protocol buffers
+
+The result of the project is printing out the time and length of the serialized object.
+
+For the protobuf serialization method, I used the .proto file and compiled it with protoc compiler. The resultant class is then used to serialize/deserialize the object.
+For this to work, yo may need import to your project the protobuf-java-2.4.1.jar library, which is available on the Internet.
+
+As conclussion, I got that externalizable objects are the fastest method to serialize/deserialize and protobuf outputs the shortest stream.
